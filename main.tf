@@ -5,7 +5,7 @@ resource "google_cloud_run_v2_service" "default" {
 
   template {
     containers {
-      image = "us-docker.pkg.dev/cloudrun/container/hello"
+      image = "ghcr.io/genady-pro/backend/landing_generator_backend:latest"
       resources {
         limits = var.cloud_run_service_limit
       }
