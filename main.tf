@@ -1,5 +1,5 @@
 resource "google_cloud_run_v2_service" "default" {
-  name = "gcr_service_test"
+  name = "gcr-service-test"
   location = "us-central1"
   ingress = "INGRESS_TRAFFIC_ALL"
 
