@@ -5,8 +5,9 @@
 
 variable "cloud_run_service_limit" {
     description = "Limit of the CPU and memory for each instance"
-    default = limits = {
+    default = {limits = {
           cpu    = "2"
           memory = "1024Mi"
         }
+    }
 }
