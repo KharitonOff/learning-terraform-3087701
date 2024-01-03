@@ -6,7 +6,9 @@ resource "google_cloud_run_v2_service" "default" {
   template {
     containers {
       image = "us-docker.pkg.dev/cloudrun/container/hello"
-      resources = var.cloud_run_service_limit
+      resources {
+        limits = var.cloud_run_service_limit
+      }
     }
   }
 }
