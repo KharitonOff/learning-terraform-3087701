@@ -1,7 +1,7 @@
-#output "instance_ami" {
-#  value = aws_instance.web.ami
-#}
+output "instance_name" {
+  value = google_cloud_run_v2_service.default.name
+}
 
-#output "instance_arn" {
-#  value = aws_instance.web.arn
+#output "instance_id" {
+#  value = google_cloud_run_v2_service.default.id
 #}

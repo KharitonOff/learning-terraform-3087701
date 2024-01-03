@@ -3,7 +3,10 @@
 #  default     = "t3.nano"
 #}
 
-variable "cloud_run_service" {
-    name = "gcr-service-test"
-    location = "us-central1"
+variable "cloud_run_service_limit" {
+    description = "Limit of the CPU and memory for each instance"
+    default = limits = {
+          cpu    = "2"
+          memory = "1024Mi"
+        }
 }
