@@ -7,6 +7,6 @@ terraform {
 }
 
 provider "google" {
-  project     = "my-project-id"
+  project     = "genady-ak-test"
   region      = "us-central1"
 }
